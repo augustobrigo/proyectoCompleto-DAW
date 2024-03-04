@@ -2,12 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { Form5RoutingModule } from './form5-routing.module';
-import { Form5Component } from './form5/form5.component';
+import { TemporizadorComponent } from './temporizador/temporizador.component';
 
 
 @NgModule({
   declarations: [
-    Form5Component
+  
+    TemporizadorComponent
   ],
   imports: [
     CommonModule,

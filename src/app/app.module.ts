@@ -13,7 +13,15 @@ import { MatFormFieldControl, MatFormFieldModule } from '@angular/material/form-
 import{ MatDividerModule} from '@angular/material/divider';
 import { HttpClientModule } from '@angular/common/http';
 import{MatInputModule} from '@angular/material/input';
-
+import { Form1Component } from './form1/form1/form1.component';
+import { Form2Component } from './form2/form2/form2.component';
+import { Form3Component } from './form3/form3/form3.component';
+import { Form4Component } from './form4/form4/form4.component';
+import { Form5Component } from './form5/form5/form5.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule, MAT_DATE_LOCALE} from '@angular/material/core';
+import {MatButtonModule} from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 
 
 
@@ -21,6 +29,11 @@ import{MatInputModule} from '@angular/material/input';
   declarations: [
     AppComponent,
     MenuComponent,
+    Form1Component,
+    Form2Component,
+    Form3Component,
+    Form4Component,
+    Form5Component
   ],
   imports: [
     BrowserModule,
@@ -33,10 +46,15 @@ import{MatInputModule} from '@angular/material/input';
     MatSelectModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatButtonModule,
+    HttpClientModule,
+    MatNativeDateModule,
+    MatTableModule
 
   ],
-  providers: [],
+  providers: [{provide: MAT_DATE_LOCALE, useValue: 'es-ES'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
