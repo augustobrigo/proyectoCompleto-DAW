@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-frutal',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./frutal.component.css']
 })
 export class FrutalComponent {
-
+  @Input() mensajeParaFrutal:string=""
 }

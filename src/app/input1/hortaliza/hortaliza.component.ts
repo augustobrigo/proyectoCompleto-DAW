@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-hortaliza',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./hortaliza.component.css']
 })
 export class HortalizaComponent {
+mensajePadre: string="";
+enviarFP() {
 
+  @Output() 
+
+}
+@Input() mensajeParaHortaliza:string=""
 }

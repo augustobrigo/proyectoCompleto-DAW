@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-huerto',
@@ -6,7 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./huerto.component.css']
 })
 export class HuertoComponent {
-mensajeParaHortaliza: any;
-mensajeParaFrutal: any;
+  mensaje1: string="";
+  mensaje2: string="";
+mensajeFP(){
+
+}
 
 }
