@@ -5,6 +5,7 @@ import { Form2Component } from './form2/form2/form2.component';
 import { Form3Component } from './form3/form3/form3.component';
 import { Form4Component } from './form4/form4/form4.component';
 import { Form5Component } from './form5/form5/form5.component';
+import { Input1Component } from './input1/input1.component';
 
 const routes: Routes = [
   {
@@ -32,6 +33,13 @@ const routes: Routes = [
     component:Form5Component,
     loadChildren: ()=>import ('./form5/form5.module').then(m=>m.Form5Module)
   },
+  {
+    path:'input1',
+    component:Input1Component,
+    loadChildren: ()=>import ('./input1/input1.module').then(m=>m.Input1Module)
+  },
+
+
 ];
 
 @NgModule({
